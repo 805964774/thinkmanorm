@@ -1,0 +1,22 @@
+{
+    "name": "chengyi/thinkmanorm",
+    "description": "解决webman使用thinkorm无sql日志的问题",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Chengyi\\Thinkmanorm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "靳陆陆",
+            "email": "a805964774@foxmail.com"
+        }
+    ],
+    "require": {
+        "workerman/webman-framework": "^1.2.1",
+        "topthink/think-orm": "^2.0.53 || ^3.0.0",
+        "monolog/monolog": "^2.0"
+    }
+}
