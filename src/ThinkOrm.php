@@ -44,6 +44,8 @@ class ThinkOrm implements Bootstrap
                     /* @var \think\db\connector\Mysql $connection */
                     if (in_array($connection->getConfig('type'), ['mysql', 'oracle', 'sqlsrv'])) {
                         try {
+                            // 重置trace_id
+                            reset_trace_id();
                             $connection->query('select 1');
                         } catch (Throwable $e) {}
                     }
