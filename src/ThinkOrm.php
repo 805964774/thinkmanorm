@@ -2,6 +2,7 @@
 
 namespace Chengyi\Thinkmanorm;
 
+use support\Log;
 use Webman\Bootstrap;
 use Workerman\Timer;
 use Throwable;
