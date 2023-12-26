@@ -28,7 +28,7 @@ class ThinkOrm implements Bootstrap
                 $property->setAccessible(true);
                 $manager_instance = $property->getValue();
             }
-            $manager_instance->setLog(SqlLog::getInstance());
+            $manager_instance->setLog(Log::channel());
             Timer::add(55, function () use ($manager_instance) {
                 $instances = [];
                 if (method_exists($manager_instance, 'getInstance')) {
